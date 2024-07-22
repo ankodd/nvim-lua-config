@@ -1,3 +1,4 @@
-#Install
+##Install
+
 :MasonInstallAll
 :Lazy
