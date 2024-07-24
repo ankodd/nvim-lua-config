@@ -31,7 +31,6 @@ return {
         "css-lsp",
         "prettier",
         "eslint-lsp",
-        "golsp",
         "js-debug-adapter",
         "typescript-language-server",
         "rust-analyzer",
@@ -92,5 +91,12 @@ return {
   {
     "Exafunction/codeium.vim",
     lazy = false,
+  },
+  {
+    "norcalli/nvim-colorizer.lua",
+    lazy = false,
+    config = function()
+      require("colorizer").setup()
+    end,
   },
 }
