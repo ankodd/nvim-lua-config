@@ -34,6 +34,13 @@ return {
         "js-debug-adapter",
         "typescript-language-server",
         "rust-analyzer",
+        "clangd",
+        "clang-format",
+        "codelldb",
+        "cmake-language-server",
+        "asm-lsp",
+        "asmfmt",
+        "pyright",
       },
     },
   },
@@ -49,11 +56,14 @@ return {
         "css",
         "typescript",
         "javascript",
-        "go",
+        "c",
+        "cpp",
         "rust",
+        "asm",
       },
     },
   },
+
   {
     "mfussenegger/nvim-lint",
     event = "VeryLazy",
@@ -61,6 +71,7 @@ return {
       require "configs.lint"
     end,
   },
+
   {
     "windwp/nvim-ts-autotag",
     event = "VeryLazy",
@@ -68,6 +79,7 @@ return {
       require("nvim-ts-autotag").setup()
     end,
   },
+
   {
     "ggandor/leap.nvim",
     lazy = false,
@@ -75,11 +87,13 @@ return {
       require("leap").add_default_mappings(true)
     end,
   },
+
   {
     "folke/trouble.nvim",
     lazy = false,
     dependencies = { "nvim-tree/nvim-web-devicons" },
   },
+
   {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
@@ -88,15 +102,15 @@ return {
       require("todo-comments").setup()
     end,
   },
-  {
-    "Exafunction/codeium.vim",
-    lazy = false,
-  },
+
   {
     "norcalli/nvim-colorizer.lua",
     lazy = false,
     config = function()
       require("colorizer").setup()
     end,
+  },
+  {
+    "mellow-theme/mellow.nvim",
   },
 }
