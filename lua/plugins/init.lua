@@ -111,6 +111,11 @@ return {
     end,
   },
   {
-    "mellow-theme/mellow.nvim",
+    "Civitasv/cmake-tools.nvim",
+    dependencies = { "nvim-lua/plenary.nvim", "akinsho/toggleterm.nvim", "stevearc/overseer.nvim" },
+    lazy = false,
+    config = function()
+      require "configs.cmake-tools"
+    end,
   },
 }

@@ -5,7 +5,7 @@
 local M = {}
 
 M.ui = {
-  theme = "falcon",
+  theme = "nightlamp",
   transparency = true,
 
   -- hl_override = {
