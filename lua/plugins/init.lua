@@ -110,6 +110,7 @@ return {
       require("colorizer").setup()
     end,
   },
+
   {
     "Civitasv/cmake-tools.nvim",
     dependencies = { "nvim-lua/plenary.nvim", "akinsho/toggleterm.nvim", "stevearc/overseer.nvim" },
