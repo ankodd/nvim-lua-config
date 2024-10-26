@@ -1,9 +1,9 @@
 # Install
 
-1.```bash
+1.```
 $ rm -rf ~/.config/nvim && mkdir ~/.config/nvim```
 
-2.```bash
+2.```
 $ git clone https://github.com/ankodd/nvim-lua-config.git ~/.config/nvim && nvim```
 
 3. Run :MasonInstallAll, :Lazy
